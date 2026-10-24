@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email and Password DFA Validator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Email and Password Validator</h1>
+        <p>Using Deterministic Finite Automata (DFA)</p>
+
+        <form id="validatorForm">
+
+            <!-- Email Input -->
+            <label for="email">Email ID</label>
+            <input
+                type="text"
+                id="email"
+                placeholder="abcd@ashokacollege.in"
+                required
+            >
+
+            <!-- Email Validation Result -->
+            <h2>Email Validation</h2>
+            <div id="emailResult" class="result"></div>
+
+            <!-- Email DFA Diagram -->
+            <h2>Email DFA Transition Diagram</h2>
+            <div id="emailDiagram" class="diagram-container"></div>
+
+            <!-- Password Input -->
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <!-- Password Validation Result -->
+            <h2>Password Validation</h2>
+            <div id="passwordResult" class="result"></div>
+
+            <!-- Password DFA Diagram -->
+            <h2>Password DFA Transition Diagram</h2>
+            <div id="passwordDiagram" class="diagram-container"></div>
+
+            <!-- Validate Button -->
+            <button type="submit">Validate</button>
+
+        </form>
+
+        <!-- Overall Result -->
+        <h2 id="overallResult" aria-live="polite"></h2>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Main Container */
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #cccccc;
+}
+
+/* Headings */
+h1,
+h2 {
+    color: #173d70;
+}
+
+/* Input Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #aaaaaa;
+    border-radius: 6px;
+}
+
+/* Validate Button */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #173d70;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #24599c;
+}
+
+/* Validation Result */
+.result {
+    margin-top: 12px;
+    padding: 15px;
+    background: #f8faff;
+    border: 1px solid #d8e1ef;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+/* Individual DFA Transitions */
+.transition {
+    font-family: Consolas, monospace;
+    padding: 5px;
+    margin: 4px 0;
+    background: #e9f0fa;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+}
+
+/* DFA Diagram Container */
+.diagram-container {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    padding: 20px 5px;
+    border: 1px solid #ccd9ec;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+/* SVG Transition Diagram */
+.diagram-container svg {
+    display: block;
+    max-width: none;
+}
